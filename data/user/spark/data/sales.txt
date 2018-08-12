@@ -1,0 +1,13 @@
+Thin,Cell Phone,600
+kes,Cell Phone,500
+suoy,Cell Phone,900
+Shary,Tablet,600
+nono,Tablet,700
+KSKS,Tablet,600
+gogo,Cell Phone,3300
+Tsdn,Cell Phone,200
+sdn,Tablet,800
+ptin,Cell Phone,2500
+dddn,Cell Phone,1100
+wwn,Tablet,2200
+aan,Cell Phone,1000
