@@ -57,11 +57,11 @@ object DailyUV {
         // 然后，调用agg()方法 ，第一个参数，必须，必须，传入之前在groupBy()方法中出现的字段
         // 第二个参数，传入countDistinct、sum、first等，Spark提供的内置函数
         // 内置函数中，传入的参数，也是用单引号作为前缀的，其他的字段
-        userAccessLogRowDF.groupBy("date")
-            .agg('date, countDistinct('userid))
-            .map { row => Row(row(1), row(2)) }
-            .collect()
-            .foreach(println)
+//        userAccessLogRowDF.groupBy("date")
+//            .agg('date, countDistinct('userid))
+//            .map { row => Row(row(1), row(2)) }
+//            .collect()
+//            .foreach(println)
     }
 
 }

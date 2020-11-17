@@ -15,9 +15,9 @@ object DailySale {
         val conf = new SparkConf()
             .setMaster("local")
             .setAppName("DailySale")
+            .set("spark.some.config.option", "spark")
         val sc = new SparkContext(conf)
         val sqlContext = new SQLContext(sc)
-
         import sqlContext.implicits._
 
         // 说明一下，业务的特点
@@ -47,12 +47,13 @@ object DailySale {
 
         val userSaleLogDF = sqlContext.createDataFrame(userSaleLogRowRDD, structType)
 
+
         // 开始进行每日销售额的统计
-        userSaleLogDF.groupBy("date")
-            .agg('date, sum('sale_amount))
-            .map { row => Row(row(1), row(2)) }
-            .collect()
-            .foreach(println)
+//        userSaleLogDF.groupBy("date")
+//            .agg('date, sum('sale_amount))
+//            .map { row => Row(row(1), row(2)) }
+//            .collect()
+//            .foreach(println)
     }
 
 }

@@ -4,15 +4,11 @@ package com.zhengzhou.scala
 object Test {
 
 
-    def main(args: Array[String]): Unit = {
-        println("hello world")
-
-        val helloActor = new HelloActor
-        helloActor.start()
-
-        helloActor ! "leo"
+  def main(args: Array[String]): Unit = {
+    for (a <- Range(1, 10) ) {
+      println("Value of a: " + a);
     }
-
+  }
 
 }
 
